@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anas Khan — Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #10181F;
+    --panel: #16212B;
+    --line: #2B3A46;
+    --text: #EDEAE2;
+    --text-dim: #9AACB5;
+    --accent: #E7A93C;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.6;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px;}
+
+  header.hero{
+    padding:96px 0 64px;
+    border-bottom:1px solid var(--line);
+  }
+  .eyebrow{
+    color:var(--text-dim);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:14px;
+    margin-bottom:18px;
+  }
+  h1{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:clamp(40px, 7vw, 64px);
+    line-height:1.05;
+    margin:0 0 20px;
+    letter-spacing:-0.01em;
+  }
+  .hero p{
+    max-width:520px;
+    color:var(--text-dim);
+    font-size:17px;
+    margin:0;
+  }
+  .hero-links{
+    margin-top:32px;
+    display:flex;
+    gap:24px;
+    flex-wrap:wrap;
+  }
+  .hero-links a{
+    color:var(--text);
+    text-decoration:none;
+    border-bottom:1px solid var(--accent);
+    padding-bottom:2px;
+    font-size:15px;
+  }
+  .hero-links a:hover{ color:var(--accent); }
+
+  section{ padding:56px 0; border-bottom:1px solid var(--line); }
+  section:last-of-type{ border-bottom:none; }
+
+  h2{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:14px;
+    font-weight:500;
+    color:var(--text-dim);
+    margin:0 0 28px;
+  }
+
+  /* metrics ledger */
+  .ledger{ display:grid; grid-template-columns: repeat(3, 1fr); border:1px solid var(--line); }
+  .ledger div{ padding:22px 20px; border-right:1px solid var(--line); }
+  .ledger div:last-child{ border-right:none; }
+  .ledger .num{ font-family:'Fraunces', serif; font-size:36px; color:var(--accent); display:block; }
+  .ledger .label{ color:var(--text-dim); font-size:14px; margin-top:6px; }
+
+  .about p{ max-width:620px; color:var(--text); font-size:16px; }
+  .about p + p{ margin-top:14px; }
+
+  /* project rows */
+  .project{
+    padding:24px 0;
+    border-top:1px solid var(--line);
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:8px;
+  }
+  .project:first-of-type{ border-top:none; }
+  .project-top{ display:flex; justify-content:space-between; align-items:baseline; gap:16px; flex-wrap:wrap; }
+  .project-title{ font-family:'Fraunces', serif; font-size:22px; font-weight:500; }
+  .project-title a{ color:var(--text); text-decoration:none; }
+  .project-title a:hover{ color:var(--accent); }
+  .project-stack{ font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--text-dim); }
+  .status{ font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--accent); border:1px solid var(--accent); padding:2px 8px; margin-left:10px; vertical-align:middle; }
+  .project-desc{ color:var(--text-dim); font-size:15px; max-width:600px; }
+
+  /* skills */
+  .skills{ display:flex; flex-wrap:wrap; gap:10px; }
+  .skills span{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    padding:6px 12px;
+    border:1px solid var(--line);
+    color:var(--text-dim);
+  }
+
+  footer{ padding:56px 0 96px; }
+  footer p{ color:var(--text-dim); font-size:14px; }
+  footer a{ color:var(--text); }
+
+  @media (max-width:600px){
+    .ledger{ grid-template-columns: 1fr; }
+    .ledger div{ border-right:none; border-bottom:1px solid var(--line); }
+    .ledger div:last-child{ border-bottom:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Anas Khan</div>
+    <h1>Turning raw data<br>into decisions worth acting on.</h1>
+    <p>Data Analyst working across Python, SQL, and Power BI — cleaning messy datasets, finding patterns in customer behavior, and building dashboards people actually use.</p>
+    <div class="hero-links">
+      <a href="https://github.com/Anaskhan-174">GitHub</a>
+      <a href="mailto:your-email@example.com">Email</a>
+      <a href="https://linkedin.com/in/your-profile">LinkedIn</a>
+      <a href="/resume.pdf">Resume</a>
+    </div>
+  </header>
+
+  <section class="metrics">
+    <h2>at a glance</h2>
+    <div class="ledger">
+      <div><span class="num">3,900+</span><span class="label">transaction records analyzed</span></div>
+      <div><span class="num">3</span><span class="label">core tools — Python, SQL, Power BI</span></div>
+      <div><span class="num">3</span><span class="label">end-to-end projects shipped</span></div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>about</h2>
+    <p>I'm a data analyst who likes the part of the job most people skip past — sitting with a messy dataset until it starts making sense. My work runs the full loop: cleaning and structuring data in Python, querying and storing it in PostgreSQL or SQL Server, and turning it into dashboards in Power BI that a non-technical stakeholder can actually read.</p>
+    <p>I've also built a FastAPI-based analytics service and a full desktop banking application in C#/SQL Server, so I'm comfortable on both the analysis side and the engineering side of a data product.</p>
+  </section>
+
+  <section class="projects">
+    <h2>projects</h2>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title"><a href="https://github.com/Anaskhan-174/Customer_behavior_analysis" target="_blank">Customer Behavior Analysis</a></div>
+        <div class="project-stack">python · postgresql · power bi</div>
+      </div>
+      <div class="project-desc">End-to-end analytics project on 3,900+ transactional records — cleaning and modeling data in Python and PostgreSQL, then building a Power BI dashboard to surface purchasing behavior and subscription trends.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title"><a href="https://github.com/Anaskhan-174/ProjectAtlas" target="_blank">ProjectAtlas</a> <span class="status">in progress</span></div>
+        <div class="project-stack">python · fastapi · analytics api</div>
+      </div>
+      <div class="project-desc">An AI-powered data analytics platform in early development — a FastAPI backend (main.py, routes, services) that will turn raw datasets into automated insights via API.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title"><a href="https://github.com/Anaskhan-174/Banking-Management-system" target="_blank">Banking Management System</a></div>
+        <div class="project-stack">c# · .net · sql server</div>
+      </div>
+      <div class="project-desc">A desktop banking application handling login, accounts, deposits, withdrawals, transfers, and transaction/balance reporting against a SQL Server backend.</div>
+    </div>
+  </section>
+
+  <section class="skills-section">
+    <h2>skills</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>SQL / PostgreSQL</span>
+      <span>Power BI</span>
+      <span>Excel</span>
+      <span>Pandas</span>
+      <span>Data Cleaning</span>
+      <span>Dashboarding</span>
+      <span>FastAPI</span>
+      <span>C#</span>
+      <span>SQL Server</span>
+      <span>Git / GitHub</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>Open to Data Analyst roles. Reach out at <a href="mailto:your-email@example.com">your-email@example.com</a> or on <a href="https://linkedin.com/in/your-profile">LinkedIn</a>.</p>
+  </footer>
+</div>
+
+</body>
+</html>
