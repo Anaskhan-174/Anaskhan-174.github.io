@@ -3,104 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Anas Khan — Data Analyst portfolio featuring Python, SQL, Excel, Power BI and business-focused analytics projects.">
 <title>Anas Khan — Data Analyst</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root{--bg:#10181F;--panel:#16212B;--line:#2B3A46;--text:#EDEAE2;--text-dim:#9AACB5;--accent:#E7A93C;}
-  *{box-sizing:border-box;} html{scroll-behavior:smooth;}
-  body{margin:0;background:var(--bg);color:var(--text);font-family:'IBM Plex Sans',sans-serif;line-height:1.6;}
-  .wrap{max-width:800px;margin:0 auto;padding:0 24px;}
-  header.hero{padding:96px 0 64px;border-bottom:1px solid var(--line);}
-  .eyebrow{color:var(--text-dim);font-family:'IBM Plex Mono',monospace;font-size:14px;margin-bottom:18px;}
-  h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(40px,7vw,64px);line-height:1.05;margin:0 0 20px;letter-spacing:-.01em;}
-  .hero p{max-width:600px;color:var(--text-dim);font-size:17px;margin:0;}
-  .hero-links{margin-top:32px;display:flex;gap:24px;flex-wrap:wrap;}
-  .hero-links a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px;font-size:15px;}
-  .hero-links a:hover{color:var(--accent);}
-  section{padding:56px 0;border-bottom:1px solid var(--line);} section:last-of-type{border-bottom:none;}
-  h2{font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;color:var(--text-dim);margin:0 0 28px;}
-  .ledger{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);}
-  .ledger div{padding:22px 20px;border-right:1px solid var(--line);} .ledger div:last-child{border-right:none;}
-  .ledger .num{font-family:'Fraunces',serif;font-size:36px;color:var(--accent);display:block;}
-  .ledger .label{color:var(--text-dim);font-size:14px;margin-top:6px;}
-  .about p{max-width:680px;color:var(--text);font-size:16px;} .about p+p{margin-top:14px;}
-  .project{padding:24px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr;gap:8px;}
-  .project:first-of-type{border-top:none;}
-  .project-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;}
-  .project-title{font-family:'Fraunces',serif;font-size:22px;font-weight:500;}
-  .project-title a{color:var(--text);text-decoration:none;} .project-title a:hover{color:var(--accent);}
-  .project-stack{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--text-dim);}
-  .status{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent);border:1px solid var(--accent);padding:2px 8px;margin-left:10px;vertical-align:middle;}
-  .project-desc{color:var(--text-dim);font-size:15px;max-width:650px;}
-  .skills{display:flex;flex-wrap:wrap;gap:10px;} .skills span{font-family:'IBM Plex Mono',monospace;font-size:13px;padding:6px 12px;border:1px solid var(--line);color:var(--text-dim);}
-  footer{padding:56px 0 96px;} footer p{color:var(--text-dim);font-size:14px;} footer a{color:var(--text);}
-  @media(max-width:600px){.ledger{grid-template-columns:1fr;}.ledger div{border-right:none;border-bottom:1px solid var(--line);}.ledger div:last-child{border-bottom:none;}}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <header class="hero">
-    <div class="eyebrow">Anas Khan · Data Analyst</div>
-    <h1>Turning raw data<br>into decisions worth acting on.</h1>
-    <p>Analytics-focused MCA graduate working across Python, SQL, Excel, and Power BI — cleaning data, finding patterns, and building dashboards that turn business questions into clear decisions.</p>
-    <div class="hero-links">
-      <a href="https://github.com/Anaskhan-174" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:ak0449369l@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/anas-khan-3344a919b" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </header>
-
-  <section class="metrics">
-    <h2>at a glance</h2>
-    <div class="ledger">
-      <div><span class="num">3,900+</span><span class="label">purchase records analyzed</span></div>
-      <div><span class="num">4</span><span class="label">portfolio projects</span></div>
-      <div><span class="num">3</span><span class="label">completed projects + 1 in progress</span></div>
-    </div>
-  </section>
-
-  <section class="about">
-    <h2>about</h2>
-    <p>I'm a data analyst focused on the part of analytics that creates business value: understanding messy data, asking the right questions, and communicating useful insights clearly. My workflow spans data cleaning and analysis in Python, SQL-based querying, Excel, and Power BI dashboards.</p>
-    <p>Alongside analytics projects, I've built a FastAPI-based analytics platform and a C#/SQL Server banking application, giving me a practical understanding of both data analysis and software development.</p>
-  </section>
-
-  <section class="projects">
-    <h2>selected projects</h2>
-
-    <div class="project">
-      <div class="project-top"><div class="project-title"><a href="https://github.com/Anaskhan-174/Customer_behavior_analysis" target="_blank" rel="noopener">Customer Shopping Behavior Analysis</a></div><div class="project-stack">python · postgresql · power bi</div></div>
-      <div class="project-desc">End-to-end analysis of 3,900 purchase records. Data was explored and cleaned in Python, analyzed with PostgreSQL/SQL, and presented through a Power BI dashboard focused on customer purchasing, subscriptions, discounts, and product behavior.</div>
-    </div>
-
-    <div class="project">
-      <div class="project-top"><div class="project-title"><a href="https://github.com/Anaskhan-174/Global-Airbnb-Performance-Dashboard" target="_blank" rel="noopener">Global Airbnb Performance Dashboard</a></div><div class="project-stack">power bi · power query · dax</div></div>
-      <div class="project-desc">Interactive Power BI dashboard analyzing listings, pricing, reviews, ratings, host trust signals, and market performance across major global Airbnb cities.</div>
-    </div>
-
-    <div class="project">
-      <div class="project-top"><div class="project-title"><a href="https://github.com/Anaskhan-174/Banking-Management-system" target="_blank" rel="noopener">Banking Management System</a></div><div class="project-stack">c# · .net · sql server</div></div>
-      <div class="project-desc">Desktop banking application built with C# Windows Forms and SQL Server, covering authentication, customer/account management, banking operations, CRUD workflows, and transaction handling.</div>
-    </div>
-
-    <div class="project">
-      <div class="project-top"><div class="project-title"><a href="https://github.com/Anaskhan-174/ProjectAtlas" target="_blank" rel="noopener">Project Atlas</a> <span class="status">in progress</span></div><div class="project-stack">python · fastapi · pandas</div></div>
-      <div class="project-desc">An analytics automation platform under active development. The current work includes dataset upload, profiling, and automatic data cleaning, with automated insights, dashboards, and reporting planned for future stages.</div>
-    </div>
-  </section>
-
-  <section class="skills-section">
-    <h2>skills</h2>
-    <div class="skills">
-      <span>Python</span><span>Pandas</span><span>SQL</span><span>PostgreSQL</span><span>SQL Server</span><span>Excel</span><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Data Cleaning</span><span>Data Visualization</span><span>Business Analysis</span><span>FastAPI</span><span>C#</span><span>Git / GitHub</span>
-    </div>
-  </section>
-
-  <footer>
-    <p>Open to Data Analyst / Junior Data Analyst opportunities. Reach out at <a href="mailto:ak0449369l@gmail.com">ak0449369l@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/anas-khan-3344a919b" target="_blank" rel="noopener">LinkedIn</a>.</p>
-  </footer>
-</div>
-</body>
-</html>
+:root{--bg:#10181F;--panel:#16212B;--line:#2B3A46;--text:#EDEAE2;--text-dim:#9AACB5;--accent:#E7A93C}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:'IBM Plex Sans',sans-serif;line-height:1.6}.wrap{max-width:900px;margin:0 auto;padding:0 24px}
+header.hero{padding:96px 0 64px;border-bottom:1px solid var(--line)}.eyebrow{color:var(--text-dim);font-family:'IBM Plex Mono',monospace;font-size:14px;margin-bottom:18px}h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(40px,7vw,64px);line-height:1.05;margin:0 0 20px}.hero p{max-width:620px;color:var(--text-dim);font-size:17px;margin:0}.hero-links{margin-top:32px;display:flex;gap:24px;flex-wrap:wrap}.hero-links a,.btn{color:var(--text);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px;font-size:15px}.hero-links a:hover,.btn:hover{color:var(--accent)}
+section{padding:56px 0;border-bottom:1px solid var(--line)}h2{font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;color:var(--text-dim);margin:0 0 28px}.ledger{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}.ledger div{padding:22px 20px;border-right:1px solid var(--line)}.ledger div:last-child{border-right:none}.ledger .num{font-family:'Fraunces',serif;font-size:36px;color:var(--accent);display:block}.ledger .label{color:var(--text-dim);font-size:14px;margin-top:6px}.about p{max-width:720px;color:var(--text);font-size:16px}.about p+p{margin-top:14px}
+.project{padding:28px 0;border-top:1px solid var(--line);display:grid;gap:12px}.project:first-of-type{border-top:none}.project-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}.project-title{font-family:'Fraunces',serif;font-size:22px;font-weight:500}.project-title a{color:var(--text);text-decoration:none}.project-title a:hover{color:var(--accent)}.project-stack{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--text-dim)}.status{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent);border:1px solid var(--accent);padding:2px 8px;margin-left:10px}.project-desc{color:var(--text-dim);font-size:15px;max-width:700px}
+.preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:16px}.preview{border:1px solid var(--line);background:var(--panel);overflow:hidden}.preview img{display:block;width:100%;height:220px;object-fit:cover}.preview p{padding:12px 14px;margin:0;color:var(--text-dim);font-size:13px}.btn{display:inline-block;margin-top:4px;border:1px solid var(--accent);padding:8px 14px;text-decoration:none}.skills{display:flex;flex-wrap:wrap;gap:10px}.skills span{font-family:'IBM Plex Mono',monospace;font-size:13px;padding:6px 12px;border:1px solid var(--line);color:var(--text-dim)}footer{padding:56px 0 96px}footer p{color:var(--text-dim);font-size:14px}footer a{color:var(--text)}
+@media(max-width:650px){.ledger{grid-template-columns:1fr}.ledger div{border-right:none;border-bottom:1px solid var(--line)}.ledger div:last-child{border-bottom:none}.preview-grid{grid-template-columns:1fr}.preview img{height:auto}.wrap{padding:0 18px}}
+</style></head>
+<body><div class="wrap">
+<header class="hero"><div class="eyebrow">Anas Khan</div><h1>Turning raw data<br>into decisions worth acting on.</h1><p>Data Analyst working across Python, SQL, Excel, and Power BI — cleaning messy datasets, finding patterns in customer behavior, and building dashboards people actually use.</p><div class="hero-links"><a href="https://github.com/Anaskhan-174">GitHub</a><a href="mailto:ak0449369l@gmail.com">Email</a><a href="https://www.linkedin.com/in/anas-khan-3344a919b">LinkedIn</a><a href="resume.html">Resume</a></div></header>
+<section><h2>at a glance</h2><div class="ledger"><div><span class="num">3,900+</span><span class="label">purchase records analyzed</span></div><div><span class="num">4</span><span class="label">portfolio projects</span></div><div><span class="num">3</span><span class="label">core analytics tools — Python, SQL, Power BI</span></div></div></section>
+<section class="about"><h2>about</h2><p>I'm a data analyst who likes the part of the job most people skip past — sitting with a messy dataset until it starts making sense. My work runs the full loop: cleaning and structuring data in Python, querying data in PostgreSQL or SQL Server, and turning it into Power BI dashboards that a non-technical stakeholder can actually read.</p><p>I've also built a FastAPI-based analytics service and a full desktop banking application in C#/SQL Server, so I'm comfortable on both the analysis side and the engineering side of a data product.</p></section>
+<section class="projects"><h2>selected projects</h2>
+<div class="project"><div class="project-top"><div class="project-title"><a href="https://github.com/Anaskhan-174/Customer_behavior_analysis" target="_blank">Customer Shopping Behavior Analysis</a></div><div class="project-stack">python · postgresql · power bi</div></div><div class="project-desc">End-to-end analysis of 3,900 purchase records — data cleaning, feature engineering, SQL business analysis, customer segmentation and Power BI reporting.</div><div class="preview-grid"><div class="preview"><img src="https://raw.githubusercontent.com/Anaskhan-174/Customer_behavior_analysis/main/dashboard.png" alt="Customer Behavior Power BI Dashboard"><p>Customer behavior dashboard preview</p></div></div><a class="btn" href="https://github.com/Anaskhan-174/Customer_behavior_analysis" target="_blank">View project →</a></div>
+<div class="project"><div class="project-top"><div class="project-title"><a href="https://github.com/Anaskhan-174/Global-Airbnb-Performance-Dashboard" target="_blank">Global Airbnb Performance Dashboard</a></div><div class="project-stack">power bi · power query · dax</div></div><div class="project-desc">Interactive Power BI analysis of global listings, pricing, city performance, reviews, ratings and host trust signals.</div><div class="preview-grid"><div class="preview"><img src="https://raw.githubusercontent.com/Anaskhan-174/Global-Airbnb-Performance-Dashboard/main/Overview.png" alt="Airbnb Dashboard Overview"><p>Overview — global listings and market performance</p></div><div class="preview"><img src="https://raw.githubusercontent.com/Anaskhan-174/Global-Airbnb-Performance-Dashboard/main/Ratings.png" alt="Airbnb Ratings Dashboard"><p>Ratings — city and property performance</p></div><div class="preview"><img src="https://raw.githubusercontent.com/Anaskhan-174/Global-Airbnb-Performance-Dashboard/main/Reviews.png" alt="Airbnb Reviews Dashboard"><p>Reviews — customer feedback and host trust</p></div></div><a class="btn" href="https://github.com/Anaskhan-174/Global-Airbnb-Performance-Dashboard" target="_blank">View project →</a></div>
+<div class="project"><div class="project-top"><div class="project-title"><a href="https://github.com/Anaskhan-174/Banking-Management-system" target="_blank">Banking Management System</a></div><div class="project-stack">c# · .net · sql server</div></div><div class="project-desc">Desktop banking application handling login, customer accounts, deposits, withdrawals, transfers and transaction reporting against SQL Server.</div><a class="btn" href="https://github.com/Anaskhan-174/Banking-Management-system" target="_blank">View project →</a></div>
+<div class="project"><div class="project-top"><div class="project-title"><a href="https://github.com/Anaskhan-174/ProjectAtlas" target="_blank">ProjectAtlas</a><span class="status">in progress</span></div><div class="project-stack">python · fastapi · analytics api</div></div><div class="project-desc">An analytics automation platform in development, with automatic data profiling and cleaning already part of the workflow and AI-assisted insights, dashboards and reporting planned.</div><a class="btn" href="https://github.com/Anaskhan-174/ProjectAtlas" target="_blank">View project →</a></div>
+</section>
+<section><h2>skills</h2><div class="skills"><span>Python</span><span>Pandas</span><span>SQL</span><span>PostgreSQL</span><span>SQL Server</span><span>Excel</span><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Data Cleaning</span><span>Data Visualization</span><span>Business Analysis</span><span>FastAPI</span><span>C#</span><span>Git / GitHub</span></div></section>
+<section><h2>contact</h2><p>Open to Data Analyst and Junior Data Analyst opportunities.</p><div class="hero-links"><a href="mailto:ak0449369l@gmail.com">Email me</a><a href="https://www.linkedin.com/in/anas-khan-3344a919b">LinkedIn</a><a href="https://github.com/Anaskhan-174">GitHub</a><a href="resume.html">View Resume</a></div></section>
+<footer><p>© Anas Khan · Data Analyst Portfolio</p></footer></div></body></html>
